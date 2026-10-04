@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Development Roadmap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">&lt;/&gt;</div>
+      <div>
+        <h1>Software Development Roadmap</h1>
+        <p>From fundamentals to professional software engineering</p>
+      </div>
+    </div>
+    <button id="resetBtn" class="ghost-btn">Reset Progress</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">YOUR LEARNING SYSTEM</span>
+        <h2>Learn in the right order. Build at every stage.</h2>
+        <p>
+          A complete, practical path covering programming, web development,
+          backend, databases, testing, DevOps, cloud, system design and advanced engineering.
+        </p>
+      </div>
+      <div class="hero-card">
+        <span>Overall Progress</span>
+        <strong id="progressPercent">0%</strong>
+        <div class="progress"><div id="progressBar"></div></div>
+        <small id="progressText">0 of 0 topics completed</small>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Search JavaScript, Docker, PostgreSQL, React...">
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="core">Core</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="backend">Backend</button>
+        <button class="filter" data-filter="devops">DevOps</button>
+        <button class="filter" data-filter="advanced">Advanced</button>
+      </div>
+    </section>
+
+    <section class="next-card" id="nextCard">
+      <div class="next-icon">→</div>
+      <div>
+        <span class="eyebrow">RECOMMENDED NEXT</span>
+        <h3 id="nextTitle">Start with Stage 1</h3>
+        <p id="nextDescription">Complete topics in sequence. Your next incomplete topic appears here.</p>
+      </div>
+      <button id="nextBtn" class="primary-btn">Open</button>
+    </section>
+
+    <section class="roadmap" id="roadmap"></section>
+  </main>
+
+  <footer>
+    <p>Built as a personal learning roadmap • Progress is saved in your browser</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
